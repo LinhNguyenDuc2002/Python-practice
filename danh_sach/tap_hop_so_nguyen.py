@@ -1,0 +1,13 @@
+m,n = map(int,input().split())
+ds1 = set(map(int,input().split()))
+ds2 = set(map(int,input().split()))
+a = list(ds1.intersection(ds2))
+b = list(ds1-ds2)
+c = list(ds2-ds1)
+a.sort()
+b.sort()
+c.sort()
+print(*a)
+print(*b)
+print(*c)
+
